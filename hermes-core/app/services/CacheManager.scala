@@ -16,6 +16,8 @@ class CacheManager @Inject() private (val applicationLifecycle: ApplicationLifec
   //  Ignition.setClientMode(true)
 
   var igniteConfiguration = new IgniteConfiguration()
+  igniteConfiguration.setPeerClassLoadingEnabled(true);
+
   var ignite : Ignite = Ignition.getOrStart(igniteConfiguration);
   val userCacheConfig: CacheConfiguration[String, Int] = new CacheConfiguration[String, Int]("_core")
                                                                             .setCacheMode(CacheMode.PARTITIONED)
