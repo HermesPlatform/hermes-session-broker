@@ -1,2 +1,2 @@
 # hermes-core
-The Core of Hermes containing matchmaking and data harvesting logic.
+The core of Hermes: contains user management, peer to peer matchmaking and data harvesting logic.
