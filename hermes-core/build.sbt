@@ -11,7 +11,9 @@ libraryDependencies += guice
 libraryDependencies += "org.scalatestplus.play" %% "scalatestplus-play" % "5.0.0" % Test
 libraryDependencies += "org.apache.ignite" % "ignite-core" % "2.9.1"
 libraryDependencies += "org.apache.ignite" % "ignite-spring" % "2.9.1"
-
+libraryDependencies += "org.hibernate.ogm" % "hibernate-ogm-core" % "5.4.1.Final"
+libraryDependencies += "org.hibernate.ogm" % "hibernate-ogm-ignite" % "5.3.1.Final"
+libraryDependencies += "org.hibernate.javax.persistence" % "hibernate-jpa-2.1-api" % "1.0.2.Final"
 
 cancelable in Global := true
 // Adds additional packages into Twirl

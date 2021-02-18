@@ -13,7 +13,7 @@ import javax.inject.Singleton
 @Singleton
 class CacheManager @Inject() private (val applicationLifecycle: ApplicationLifecycle) {
   // TODO
-  //  Ignition.setClientMode(true)
+  // Ignition.setClientMode(true)
 
   var igniteConfiguration = new IgniteConfiguration()
   igniteConfiguration.setPeerClassLoadingEnabled(true);
