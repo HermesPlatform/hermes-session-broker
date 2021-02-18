@@ -1,11 +1,11 @@
 package models
 
-import org.hibernate.id.CompositeNestedGeneratedValueGenerator.GenerationPlan
-
 import java.util.Date
-import javax.persistence.{Entity, GeneratedValue, GenerationType, Id}
+import javax.persistence.{Entity, GeneratedValue, GenerationType, Id, OneToMany, Table}
+import models.HostSession
 
-@Entity(name = "User")
+@Entity
+@Table(name="users")
 class User(
       var username: String,
       var passwordHash: String,
@@ -13,5 +13,8 @@ class User(
       var currentIp: String){
   @Id
   @GeneratedValue(strategy = GenerationType.AUTO)
-  var id: Long = _
+  var userId: Long = _;
+
+//  @OneToMany(mappedBy = "host")
+//  var sessions : Set[HostSession] = _;
 }
