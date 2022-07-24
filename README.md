@@ -1,2 +1,2 @@
-# hermes-core
-The core of Hermes: contains user management, peer to peer matchmaking and data harvesting logic.
+# Hermes Session Broker
+The core of Hermes: contains user management, acting as a broker between parties, to distribute sessions and data harvesting logic.
